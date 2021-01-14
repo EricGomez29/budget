@@ -7,7 +7,7 @@ const {
 } = process.env;
 
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/petshop`, {
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/budget`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
@@ -31,7 +31,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // In sequelize.models are all imported models as properties
 // To relate them we do a destructuring
-const {  } = sequelize.models;
+const { Operations } = sequelize.models;
 
 
 
