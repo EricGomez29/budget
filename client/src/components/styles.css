@@ -1,0 +1,25 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.operations {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.operations div {
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.operationsContainer {
+    width: 100%;
+    background-color: white;
+}

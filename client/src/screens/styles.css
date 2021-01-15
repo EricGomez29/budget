@@ -1,0 +1,97 @@
+.details {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    z-index: 5;
+    border: 5px solid lightgrey;
+    margin-top: 20px
+}
+
+.details div {
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.operationContainer {
+    box-shadow: -1px 2px 32px -20px rgba(0,0,0,0.75);
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.operationContainer div:hover {
+    background-color: lightgray;
+}
+
+.amount {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.amount div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.information {
+    background-color: white;
+    z-index: 5;
+    border: 5px solid lightgrey;
+    margin-top: 20px;
+    align-self: self-end;
+    border-radius: 15px 15px 0px 15px;
+}
+
+.containerDescription {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.information div {
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description {
+    width: 70%;
+    background-color: white;
+    border: 1px solid lightblue;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 0px 15px 15px 15px;
+}
+
+.bgContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #dcd7d7;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: -1px 2px 32px -20px rgba(0,0,0,0.75);
+}
