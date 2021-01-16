@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import OperationsComponent from '../components/OperationsComponent';
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
 import {Link} from 'react-router-dom';
 import './styles.css';
 
@@ -22,6 +22,9 @@ export default function Home() {
         if(o.type === "Egreso") {
             if(amounts === 0) {
                 return amounts;
+            }
+            if(amounts < o.amount) {
+                throw new Error('No tienes monto suficiente');
             }
             return amounts = amounts - o.amount;
         }
@@ -46,9 +49,7 @@ export default function Home() {
 
     return (
         <div className="containerDetails">
-            <div style={{height: "300px", width: "100%", zIndex: "-1", backgroundColor: "#7588ee", position: "absolute"}}>
-                
-            </div>
+            <div style={{height: "300px", width: "100%", zIndex: "-1", backgroundColor: "#7588ee", position: "absolute"}}></div>
             <div>
                 <div>
                     <h1 style={{fontSize: "39px", color: "white", fontWeight: "bold"}}>Monto Disponible:</h1>

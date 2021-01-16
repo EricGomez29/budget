@@ -4,7 +4,6 @@ import OperationsComponent from '../components/OperationsComponent';
 
 export default function Movements(data) {
     const operations = data.data;
-    console.log(operations)
 
     const opArr = []
     operations && operations.map((o, i) => {

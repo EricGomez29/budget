@@ -32,8 +32,8 @@ export default function NavBar() {
                         <Link to='/home' style={{textDecoration: "none", color: "black"}}>
                             <MenuItem onClick={handleClose}>Inicio</MenuItem>
                         </Link>
-                        <Link to='/movements/new' style={{textDecoration: "none", color: "black"}}>
-                            <MenuItem onClick={handleClose}>Nuevo Movimiento</MenuItem>
+                        <Link to='/new-operation' style={{textDecoration: "none", color: "black"}}>
+                            <MenuItem onClick={handleClose}>Nueva Operacion</MenuItem>
                         </Link>
                         <Link to='/movements' style={{textDecoration: "none", color: "black"}}>
                             <MenuItem onClick={handleClose}>Todos los movimientos</MenuItem>
